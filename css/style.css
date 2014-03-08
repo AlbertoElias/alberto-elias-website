@@ -1,0 +1,303 @@
+html {
+  background: url(../img/background.jpg)  no-repeat left fixed;
+  background-size: cover;
+  max-height: 100%;
+  font-family: 'Varela Round', sans-serif;
+}
+
+body {
+  position: absolute;
+  top: 5%;
+  height: 85%;
+}
+
+article, section, #header {
+  display: inline-block;
+  float: left;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.8em;
+}
+
+h3 {
+  font-size: 2.3em;
+}
+
+h4 {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+h5 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #36DA82;
+  text-decoration: none;
+}
+
+a[href^="tel:"]:before {
+  content: "\260E";
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+ul {
+  text-align: left;
+  list-style-type: disc;
+  margin: 0 auto;
+  width: 50%;
+}
+
+ul li ul {
+  list-style-type: circle;
+  margin-left: 0.6em;
+}
+
+#header {
+  position: relative;
+  font-family: Poiret One;
+  background-color: #228751;
+  opacity: 0.95;
+  margin: 10px;
+  padding: 10px;
+}
+
+nav#menu {
+  font-size: 3em;
+  position: absolute;
+  bottom: 0;
+  right: 0.2em;
+}
+
+nav#menu ul {
+  list-style-type: none;
+  text-align: right;
+  margin: 0;
+  width: 100%;
+}
+  
+article {
+  width: 55em;
+  background-color: floralwhite;
+  opacity: 0.8;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.image {
+  height: 25em;
+  position: relative;
+}
+
+.image img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#contact header, #about header {
+  margin-bottom: 10px;
+}
+
+#online, #offline {
+  display: block;
+  margin: 10px auto 10px auto;
+  clear: both;
+  width: inherit;
+  height: auto;
+}
+
+#gmap, #cartoMap {
+  width: 100%;
+  height: 25em;
+}
+
+#maps, #technologies {
+  margin-top: 15px;
+  height: auto;
+}
+
+#maps {
+  width: 60%;
+}
+
+#technologies {
+  width: 40%;
+}
+
+#technologies ul {
+  width: 30%;
+}
+
+#cv {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
+
+#social a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin-right: 15px;
+  background-image: url(../img/sprite.png);
+}
+
+#social a:hover {
+  opacity: 0.8;
+}
+
+#social #facebook{
+  background-position: 0 0;
+}
+
+#social #github {
+  background-position: 0 -49px;
+}
+
+#social #googleplus {
+  background-position: 0 -98px;
+}
+
+#social #instagram {
+  background-position: 0 -147px;
+}
+
+#social #linkedin {
+  background-position: 0 -196px;
+}
+
+#social #blog {
+  background-position: 0 -245px;
+}
+
+#social #twitter {
+  background-position: 0 -294px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.translucent {
+	opacity: 0.7; 
+}
+
+.hide {
+	position: absolute;
+  clip: rect(0 0 0 0);  
+}
+
+.heart {
+  color: crimson;
+}
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+  body { font-size: 100%; }
+}
+
+@media (max-width: 1280px) { /* big landscape tablets, laptops, and desktops */ 
+  body { font-size: 80%; }
+}
+
+@media (max-width: 1024px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  body { font-size: 75%; }
+}
+
+@media (max-width: 960px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  body { 
+    font-size: 70%; 
+  }
+}
+
+@media only screen and (max-width: 640px), only screen and (max-height: 600px) {
+  html {
+    background-position: left top;
+  }
+
+  body { 
+    position: relative;
+    font-size: 70%; 
+    width: auto !important;
+    top: 0%;
+  } 
+
+  article, section, #header {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  #header {
+    margin: 0;
+  }
+
+  #codeweek, #portfolio {
+    margin-top: 0;
+  }
+
+  nav#menu {
+    font-size: 2em;
+  }
+
+  h1, h2, h3, h4, h5, p, .image {
+    margin: 5px;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .project ul {
+    margin-bottom: 5px;
+  }
+
+  .image {
+    height: 100%;
+  }
+
+  .image img {
+    position: relative;
+  }
+
+  #gmap, #cartoMap {
+    width: 100%;
+    height: 20em;
+  }
+
+  #maps, #technologies {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  #cv {
+    position: relative;
+    text-align: right;
+  }
+}
