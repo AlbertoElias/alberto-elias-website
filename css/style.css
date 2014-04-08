@@ -1,11 +1,28 @@
 html {
-  background: url(../img/background.jpg)  no-repeat left fixed;
-  background-size: cover;
-  max-height: 100%;
+  height: 100%;
   font-family: 'Varela Round', sans-serif;
 }
 
 body {
+  /*background: url(../img/background.jpg)  no-repeat left fixed;
+  background-color: slategrey;
+  background-size: cover;*/
+  position: relative;
+  height: 100%;
+}
+
+#cover {
+  background: url(../img/background.jpg) no-repeat;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* To compensate for mobile browser address bar space */
+  background-size: cover;
+}
+
+#content {
   position: absolute;
   top: 5%;
   height: 85%;
@@ -236,15 +253,26 @@ article {
 
 @media only screen and (max-width: 640px), only screen and (max-height: 600px) {
   html {
-    background-position: left top;
+    height: auto;
   }
 
   body { 
-    position: relative;
+    background-position: left top;
     font-size: 70%; 
     width: auto !important;
-    top: 0%;
+    position: absolute;
+    height: auto;
   } 
+
+  #cover {
+    background-size: cover;
+  }
+
+  #content {
+    top: 0%;
+    height: auto;
+    position: relative;
+  }
 
   article, section, #header {
     display: block;

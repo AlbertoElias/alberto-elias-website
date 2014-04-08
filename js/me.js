@@ -23,6 +23,7 @@ function updateWidth() {
 	var articlesWidth = (articles[0].offsetWidth+20)*articles.length;
 	var width = header.offsetWidth+20+articlesWidth+1;
 	document.getElementsByTagName('body')[0].style.width = width+'px';
+	//document.getElementById('content').style.width = width+'px';
 }
 
 function scrollTo(x) {
